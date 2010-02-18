@@ -1,0 +1,1 @@
+A tiny bash script which will read in URLs from a file, run Apache Benchmark on them, and concat the results onto a text file for later analysis.  Set this up on cron to take measurements over time.

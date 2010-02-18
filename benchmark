@@ -1,0 +1,10 @@
+#!/bin/bash
+
+URLS=/path/to/benchmark_urls.txt
+RESULTS=/path/to/benchmark_results.txt
+CONCURRENCY=1
+AMOUNT=1
+
+while read -r LINE
+  do /usr/bin/ab -c$CONCURRENCY -n$AMOUNT $LINE >> $RESULTS
+done < $URLS
